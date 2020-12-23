@@ -1,0 +1,14 @@
+--- /etc/asound.conf	1970-01-01 01:00:00.000000000 +0100
++++ asound.conf	2020-12-04 06:07:23.835505916 +0000
+@@ -0,0 +1,11 @@
++pcm.!default {
++        type plug
++        slave {
++                pcm "hw:0,0"
++        }
++}
++
++ctl.!default {
++        type hw
++        card 0
++}

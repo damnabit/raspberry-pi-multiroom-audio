@@ -1,0 +1,12 @@
+--- /boot/config.txt	2020-08-20 11:32:30.000000000 +0100
++++ new.config.txt	2020-12-04 06:04:54.576045922 +0000
+@@ -53,8 +53,7 @@
+ 
+ # Additional overlays and parameters are documented /boot/overlays/README
+ 
+-# Enable audio (loads snd_bcm2835)
+-dtparam=audio=on
++dtoverlay=hifiberry-dacplus
+ 
+ [pi4]
+ # Enable DRM VC4 V3D driver on top of the dispmanx display stack
